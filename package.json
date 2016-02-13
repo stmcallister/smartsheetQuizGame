@@ -1,0 +1,29 @@
+{
+  "name": "smartsheet-quiz-game",
+  "version": "0.0.1",
+  "description": "A familiar tile based quiz game on Smartsheet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveskull81/smartsheetQuizGame.git"
+  },
+  "keywords": [
+    "quiz",
+    "game",
+    "smartsheet"
+  ],
+  "author": "David Inden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveskull81/smartsheetQuizGame/issues"
+  },
+  "homepage": "https://github.com/daveskull81/smartsheetQuizGame#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "smartsheet": "0.0.5"
+  }
+}
