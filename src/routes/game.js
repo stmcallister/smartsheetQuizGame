@@ -1,13 +1,13 @@
+require('dotenv').config();
 var express = require('express');
 var router = express.Router();
-var sheet = require('./../smartsheet.json');
 var client = require('smartsheet');
-var smartsheet = client.createClient({accessToken: sheet.accessToken});
+var smartsheet = client.createClient({accessToken: process.env.ACCESS_TOKEN});
 
 /* GET home page. */
 router.get('/', function(req, res) {
 
-  smartsheet.sheets.getSheet({id: sheet.sheetId}, function(error, data){
+  smartsheet.sheets.getSheet({id: process.env.SHEET_ID}, function(error, data){
     if (error) {
       console.log(error);
     }
